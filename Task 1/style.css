@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html
+{
+	font-size: 16px;
+}
+body{
+	font-family: 'Playpen Sans', cursive;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+	transition: all 0.5s ease-in-out;
+}
+
+img:hover
+{
+	transform: scale(1.1,1.1);
+}
+
+.container
+{
+	padding: var(--cont-padding);
+}
+
+.navbar{
+    display: flex;
+    height: 67px;
+	margin: 2px 20px 20px;
+	
+}
+.navbar li{
+    list-style: none;
+    margin: 0 12px;
+	
+}
+.navbar li a{
+    text-decoration: none;
+    margin: 0 12px;
+	font-weight: bolder;
+	color: rgb(39, 33, 33);
+
+}
+
+header{
+	font-size: 1.5rem;
+	
+	
+}
+
+header a:hover{
+	text-decoration: underline ;
+	transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+	display: inline-block;
+}
+
+.row
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section-heading
+{
+	font-size: 1.8rem;
+	font-family: var(--para-font);
+	line-height: 2;
+}
+
+.para-line
+{
+	
+	font-size: 1.2rem;
+	line-height: 1.5;
+	padding: 25px;
+}
+
+.btn
+{
+	padding: 10px 30px;
+	font-size: 1.2rem;
+	font-weight: 500;
+	font-family: var(--heading-font);
+	border: none;
+	border-radius: 50px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	margin-right: 1.5rem;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.btn:hover
+{
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	transform: scale(1.1,1.1);
+}
+
+.btn.dark
+{
+	color: var(--third-color);
+	background: var(--fourth-color);
+}
+
+.btn.dark:hover
+{
+	color: var(--third-color);
+	background: var(--secondary-color);
+}
+
+.btn.light
+{
+	color: var(--third-color);
+	background: var(--secondary-color);
+}
+
+.btn.light:hover
+{
+	color: var(--third-color);
+	background: var(--fourth-color);
+}
+
+.spacer
+{
+	margin: 2rem 0;
+}
+
+/*-------------- Header section ------------*/
+.header
+{
+	background: rgb(173, 209, 214);
+	
+}
+
+.header .container .row
+{
+	flex-direction: column-reverse;
+}
+
+.logo
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.logo h1
+{
+	font-family: var(--heading-font);
+	font-size: 1.9rem;
+	text-align: center;
+}
+
+.main-heading
+{
+	font-family: var(--heading-font);
+	font-size: 2.2rem;
+	font-weight: 300;
+	line-height: 1.2;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.main-heading span
+{
+	font-weight: 700;
+}
+
+.buttons
+{
+	margin-top: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}
+
+.featured-img
+{
+	margin-top: 3.6rem;
+}
+/*-------------- Header section ------------*/
+
+
+/*-------------- About section -------------*/
+.about
+{
+	background-image: linear-gradient(to top, #25819f88, #76a9b3b7);
+	font-family: 'Playpen Sans', cursive;
+}
+
+.about .container .row
+{
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+}
+
+.about .section-heading{
+	font-size: 3rem;
+}
+.about p{
+	font-size: 1.1rem;
+}
+/*-------------- About section -------------*/
+
+
+/*-------------- Colors section -------------*/
+.colors
+{
+	background-image: linear-gradient(40deg, #65e5da, #fff0e5);
+}
+
+.colors .container .row
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.product
+{
+	background: var(--fourth-color);
+	border-radius: 10px;
+	margin: 1rem 0;
+	padding: 2rem 1.5rem 1.5rem 1.5rem;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.product:hover
+{
+	transform: scale(1.1);
+}
+
+.product-heading
+{
+	font-size: 1.2rem;
+	font-weight: 600;
+	font-family: var(--heading-font);
+	line-height: 1.5;
+}
+
+.product-desc
+{
+	font-size: 1.1rem;
+	font-weight: 300;
+	line-height: 1.2;
+	font-family: var(--para-font);
+}
+/*-------------- Colors section -------------*/
+
+
+/*-------------- Support section ------------*/
+.support
+{
+	background-image: linear-gradient(to top, #65e5da, #fff0e5);
+}
+
+.support .container .row
+{
+	flex-direction: column;
+}
+
+.spacer
+{
+	margin: 4rem 0;
+}
+
+.sub-heading
+{
+	font-family: var(--heading-font);
+}
+/*-------------- Support section ------------*/
+
+
+/*-------------- Footer section -------------*/
+.footer
+{
+	background-image: linear-gradient(40deg, #65e5da, #fff0e5);
+}
+
+.footer .container .row
+{
+	flex-direction: column;
+}
+
+.footer .container .row .col
+{
+	width: 100%;
+}
+
+.link-heading
+{
+	font-family: var(--heading-font);
+	font-weight: 500;
+}
+
+.footer .container .row .col1
+{
+	margin-top: 1.5rem;
+}
+.footer .container .row .col1 p
+{
+	padding: 20px 0;
+}
+
+.link-item
+{
+	list-style: none;
+}
+
+.link-item a
+{
+	text-decoration: none;
+	font-family: var(--para-font);
+	font-weight: 400;
+	font-size: 1rem;
+	color: var(--third-color);
+	cursor: pointer;
+}
+
+.link-item a:hover
+{
+	transform: scale(1.1,1.1);
+}
+/*-------------- Footer section -------------*/
+
+
+/*--------------- Desktop & Tablet version --------------*/
+@media screen and (min-width: 1028px)
+{
+	
+}
+
+@media screen and (min-width: 768px)
+{
+	img
+	{
+		min-width: 100%;
+		height: auto;
+	}
+
+	.container
+	{
+		max-width: 1180px;
+		margin: 0 auto;
+		padding: 4rem 0;
+		/*height: 100vh;*/
+	}
+
+	/*------------- Header section ------------------*/
+	.logo h4
+	{
+		text-align: left;
+	}
+
+	.header .container .row
+	{
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header .container .row .col
+	{
+		width: 100%;
+	}
+
+	.main-heading
+	{
+		font-size: 4rem;
+	}
+
+	.buttons
+	{
+		justify-content: flex-start;
+	}
+
+	.featured-img
+	{
+		margin: 0;
+		padding: 0;
+	}
+	/*------------- Header section ------------------*/
+
+	/*------------- About section ---------------*/
+	.about .container .row
+	{
+		flex-direction: row;
+		gap: 2rem;
+	}
+
+	.about .container .row .col
+	{
+		width: 100%;
+	}
+	/*------------- About section ---------------*/
+
+
+	/*------------- Colors section --------------*/
+	.colors .container .row
+	{
+		flex-direction: row;
+		gap: 2.5rem;
+	}
+
+	.spacer
+	{
+		margin: 1.5rem
+	}
+	/*------------- Colors section --------------*/
+
+
+	/*------------- Support section -------------*/
+	.support .container .row
+	{
+		flex-direction: row;
+		gap: 2.5rem;
+	}
+
+	.support .container .row .col
+	{
+		width: 100%;
+	}
+
+	.Sign-in
+	{
+		display: flex;
+		word-wrap: break-word;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	
+}
+
+	@media screen and (min-width: 420px)
+{
+	
+
+	
+
+	.Sign-in
+	{
+		display: flex;
+		word-wrap: break-word;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.Sign-in h4
+	{
+		margin-left: 90px;
+		justify-content: center;
+		align-items: center;
+		
+	}
+
+
+}
+
+
+.Sign-in
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.Sign-in .container 
+	{
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		
+	}
+
+	.Sign-in .container .col1 
+	{
+		font-size: 1.5rem;
+		padding-left: 25px;
+		justify-content: space-around;
+		
+	}
+	.Sign-in .container .col1 a:hover
+	{
+		
+		text-decoration:underline;
+	}
+
+.Sign-in h4{
+    color: #0a0404;
+    padding: 5px 20px;
+    background-color: #29d9f88f;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    font-size: 30px;
+    text-decoration: capitalize;
+    text-transform: capitalize;
+    margin-right: 10px;
+    
+}
+.Sign-in{
+    width:100%;
+    height: 100%;
+    background-color:#61e2f9;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 20px;
+    padding-right: 40px;
+
+    
+}
+
+.login_form_container{
+      position:relative;
+      width: 80%;
+      height: 470px;
+      max-width: 400px;
+      max-height: 400px;
+      background: #e2e7e9;
+      border-radius: 50px 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin-top: 70px;
+  }
+  .login_form_container::before{
+  
+      position: absolute;
+      width: 170%;
+      height: 170%;
+      content: '';
+      background-image: conic-gradient(transparent, transparent, transparent, #1497bb);
+      animation: rotate_border 6s linear infinite;
+  
+  }
+  .login_form_container::after{
+  
+      position: absolute;
+      width: 170%;
+      height: 170%;
+      content: '';
+      background-image: conic-gradient(transparent, transparent, transparent, #1497bb);
+      animation: rotate_border 6s linear infinite;
+      animation-delay: -3s;
+  }
+  @keyframes rotate_border{
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(360deg);
+      }
+  }
+  .login_form{
+      position: absolute;
+      content: '';
+      background-color: #61e2f9;
+      border-radius: 50px 5px;
+      inset: 5px;
+      padding: 50px 40px;
+      z-index: 10;
+      color: #0d0b0b;
+  
+  } 
+  h2{
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+  }
+  .input_group{
+      margin-top: 40px;
+      position:relative;
+      display:flex;
+      align-items: center;
+      justify-content: start;
+  }
+  .input_text{
+      width: 95%;
+      height: 30px;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #1d272a;
+      font-size: 20px;
+      padding-left: 10px;
+      color: #0c0c0c;
+  
+  }
+  ::placeholder{
+      font-size: 15px;
+      color: #54515178;
+      letter-spacing: 1px;
+  
+  }
+  .fa{
+      font-size: 20px;
+  
+  }
+  #login_button{
+      position: relative;
+      width: 300px;
+      height: 40px;
+      transition: 1s;
+      margin-top: 70px;
+  
+  }
+  #login_button a{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      z-index: 10;
+      cursor: pointer;
+      font-size: 22px;
+      letter-spacing: 2px;
+      border: 1px solid #2e525b;
+      border-radius: 50px;
+      background-color: #00ccff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .glowIcon {
+      text-shadow: 0 0 10px #116276;
+  
+  }
